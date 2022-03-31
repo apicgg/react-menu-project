@@ -9,7 +9,7 @@ const Menu = (props) => {
         const { id, title, img, desc, price } = item;
 
         return (
-          <article className='menu-item'>
+          <article className='menu-item' key={id}>
             <img src={img} alt={title} className='photo' />
             <div className='item-info'>
               <header>
